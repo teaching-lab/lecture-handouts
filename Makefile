@@ -2,7 +2,7 @@ MDS=$(wildcard handouts/*.md)
 PDFS=$(MDS:.md=.pdf)
 TEMPLATE=template.tex
 
-all: $(PDFS) clean
+all: $(PDFS)
 
 %.pdf : %.md $(TEMPLATE)
 	env TEXINPUTS=.: pandoc --template=$(TEMPLATE) $< -o $@
