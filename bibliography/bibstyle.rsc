@@ -1,0 +1,9 @@
+print.line.length = 1000
+print.align.key = 0
+print.use.tab = Off
+print.terminal.comma = On
+pass.comments = On
+sort = on
+sort.format = {%N(year)}
+sort.reverse = on
+sort.order {* = Title # Author # BookTitle # Journal # Series # Volume # Issue # Number # Pages # NumPages # Organization # Publisher # Address # Location # Year # ISBN # ISSN #  Doi # Url}
