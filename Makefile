@@ -5,7 +5,7 @@ TEMPLATE=template.tex
 all: $(PDFS)
 
 %.pdf : %.md $(TEMPLATE)
-	env TEXINPUTS=.: pandoc --template=$(TEMPLATE) $< -o $@
+	env TEXINPUTS=.: pandoc --template=$(TEMPLATE) --bibliography=bibliography/reading.bib $< -o $@
 
 clean:
 	rm handouts/*.pdf
